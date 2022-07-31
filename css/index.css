@@ -178,6 +178,11 @@
   line-height: 24px;
   color: #FFFFFF;
   border: none;
+  transition: 0.4s;
+}
+.carousel .container .carousel-inner .carousel-item .carousel-item1 .product-info .btn-buy:hover {
+  content: "";
+  background-color: #e7662d;
 }
 
 .product-list {
@@ -249,6 +254,11 @@
   line-height: 29px;
   color: #000000;
   border: none;
+  transition: 0.4s;
+}
+.product-list .container .row-wrap .col-wrap .card .card-body .buy-price-wrap .btn-buy:hover {
+  content: "";
+  background-color: #e7662d;
 }
 .product-list .container .row-wrap .col-wrap .card .card-body .buy-price-wrap .product-price {
   position: absolute;

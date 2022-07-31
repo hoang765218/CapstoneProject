@@ -19,6 +19,7 @@ $bg-c2: #FFFFFF;
 $bg-c3: #F8B653;
 $bg-c4: #F8F8F8;
 $bg-c5: #DEDDDC;
+$bg-c6: #e7662d;
 //text-color
 $text-c1: #FFFFFF;
 $text-c2: #000000;
@@ -225,7 +226,14 @@ $text-c4: #CBC9C9;
                             @include scale(150px, 50px, 930px, 225px);
                             @include text(300, 20px, 24px, $text-c1);
                             border: none;
+                            transition: 0.4s;
+
+                            &:hover {
+                                content: '';
+                                background-color: $bg-c6;
+                            }
                         }
+
                     }
                 }
             }
@@ -294,6 +302,12 @@ $text-c4: #CBC9C9;
                                 background-color: $bg-c3;
                                 @include text(200, 24px, 29px, $text-c2 );
                                 border: none;
+                                transition: 0.4s;
+
+                                &:hover {
+                                    content: '';
+                                    background-color: $bg-c6;
+                                }
                             }
 
                             .product-price {
