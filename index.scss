@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+//Khai báo biến
+//bg-color
+$bg-c1: #000000;
+$bg-c2: #FFFFFF;
+$bg-c3: #F8B653;
+$bg-c4: #F8F8F8;
+$bg-c5: #DEDDDC;
+//text-color
+$text-c1: #FFFFFF;
+$text-c2: #000000;
+$text-c3: red;
+$text-c4: #CBC9C9;
+
+//Mixing
+//text-font;
+@mixin text($fw, $fz, $lh, $c) {
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    color: $c;
+}
+
+//kích thước; vị trí
+@mixin scale($width, $height, $left, $top) {
+    width: $width;
+    height: $height;
+    left: $left;
+    top: $top;
+}
+
+// Nesting bar
+
+//HEADER
+.header {
+    position: relative;
+    width: 1280px;
+    height: 50px;
+    background: $bg-c1;
+
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            a {
+                img {
+                    position: absolute;
+                    @include scale(116px, 32px, 24px, 10px, );
+                }
+            }
+        }
+
+        .header_bar {
+            .component1 {
+                position: absolute;
+                @include scale(66px, 36px, 1027px, 6px);
+
+                a {
+
+
+                    img {
+                        position: absolute;
+                        left: 0%;
+                        right: 53.03%;
+                        top: 8.33%;
+                        bottom: 5.56%;
+                    }
+
+                    span {
+                        position: absolute;
+                        left: 46.97%;
+                        right: 0%;
+                        top: 0%;
+                        bottom: 0%;
+                        @include text (300, 30px, 36px, $text-c1);
+
+                    }
+                }
+            }
+
+            .login {
+                a {
+                    color: unset;
+                    text-decoration: none;
+                    margin-right: 20px;
+
+                    span {
+                        position: absolute;
+                        @include scale(91px, 32px, 1103px, 15px);
+                        @include text(300, 16px, 19px, $text-c1);
+                    }
+
+                }
+            }
+
+            .register {
+                a {
+                    color: unset;
+                    text-decoration: none;
+
+                    span {
+                        position: absolute;
+                        @include scale(90px, 32px, 1170px, 15px);
+                        @include text(300, 16px, 19px, $text-c1);
+
+
+
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+//Menu
+.menu {
+    position: relative;
+    width: 1280px;
+    height: 50px;
+    background: $bg-c2;
+
+    .container {
+
+
+        .menu_bar {
+            a {
+                color: unset;
+                text-decoration: none;
+                @include text(300, 20px, 24px, $text-c2);
+                opacity: 0.7;
+                margin-right: 15px;
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    bottom: -3px;
+                    @include scale(100%, 3px, 0, '');
+                    background-color: $bg-c1;
+                    transform: scaleX(0);
+                    transform-origin: bottom right;
+                    transition: transform 0.25s ease-out;
+
+                }
+
+                &:hover {
+                    @include text(400, '', '', $text-c2);
+                    opacity: 1;
+
+                    &::after {
+                        transform: scaleX(1);
+                        transform-origin: bottom left;
+
+                    }
+
+                }
+
+
+            }
+
+
+        }
+
+    }
+}
+
+//Carousel
+.carousel {
+    width: 1280px;
+
+    .container {
+        .carousel-inner {
+            margin-left: -15px;
+
+            .carousel-item {
+                .carousel-item1 {
+                    display: flex;
+                    position: relative;
+
+                    .img-bg {
+                        @include scale(1280px, 393px, -36px, 107px);
+                    }
+
+                    .img-item {
+                        position: absolute;
+                        @include scale(821px, 392px, 86px, 5px);
+
+                    }
+
+                    .product-info {
+                        position: absolute;
+                        margin-left: 70%;
+                        margin-top: 5%;
+
+
+                        h3 {
+                            @include text(300, 40px, 48px, '');
+
+                        }
+
+                        p {
+                            @include text(300, 20px, 24px, '');
+
+                        }
+
+                        .btn-buy {
+                            background-color: $bg-c3;
+                            @include scale(150px, 50px, 930px, 225px);
+                            @include text(300, 20px, 24px, $text-c1);
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Product list
+.product-list {
+    width: 1280px;
+    margin-top: 50px;
+
+    .container {
+        .title {
+            text-align: center;
+            @include text(400, 40px, 48px, '');
+        }
+
+        .row-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .col-wrap {
+                padding: 46px;
+                width: calc(100%/3);
+
+                .card {
+                    img {
+
+                        position: absolute;
+                        width: 220px;
+                        height: 156px;
+                        left: 57px;
+                        top: 45px;
+
+                    }
+
+                    .card-body {
+
+                        background: $bg-c4;
+                        width: 334px;
+                        height: 369px;
+
+                        .product-name {
+                            position: absolute;
+                            @include scale(185px, 29px, 23px, 231px);
+                            @include text(300, 24px, 29px, '');
+
+                        }
+
+                        .product-desc {
+                            position: absolute;
+                            @include scale(153px, 24px, 23px, 268px);
+                            @include text(300, 20px, 24px, $text-c4);
+
+                        }
+
+                        .buy-price-wrap {
+                            align-items: center;
+
+                            .btn-buy {
+                                position: absolute;
+                                @include scale(175px, 64px, 0px, 305px);
+
+                                background-color: $bg-c3;
+                                @include text(200, 24px, 29px, $text-c2 );
+                                border: none;
+                            }
+
+                            .product-price {
+                                position: absolute;
+                                @include scale(160px, 64px, 174px, 305px);
+
+                                background: $bg-c5;
+                                margin-bottom: 0px;
+                                text-align: center;
+                                @include text(600, 24px, 64px, $text-c2);
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Footer
+.footer {
+    width: 1280px;
+
+    .container {
+        .footer-wrap {
+            display: flex;
+            flex-wrap: wrap;
+
+
+            .footer-col {
+                width: calc(100%/3);
+
+                .text {
+
+                    width: 300px;
+                    height: 150px;
+                    padding-top: 25px;
+                    margin-left: 50px;
+
+
+                    h3 {
+                        @include text(600, 16px, 19px, $text-c2);
+                    }
+
+                    p {
+                        font-size: 13px;
+                    }
+
+                    a {
+                        font-size: 13px;
+                        text-decoration: none;
+                        color: unset;
+                    }
+
+                    .text-link {
+                        color: $text-c3;
+                    }
+                }
+            }
+
+            .footer-color {
+                background-color: $bg-c5;
+            }
+        }
+    }
+}

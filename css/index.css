@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+  position: relative;
+  width: 1280px;
+  height: 50px;
+  background: #000000;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container .logo a img {
+  position: absolute;
+  width: 116px;
+  height: 32px;
+  left: 24px;
+  top: 10px;
+}
+.header .container .header_bar .component1 {
+  position: absolute;
+  width: 66px;
+  height: 36px;
+  left: 1027px;
+  top: 6px;
+}
+.header .container .header_bar .component1 a img {
+  position: absolute;
+  left: 0%;
+  right: 53.03%;
+  top: 8.33%;
+  bottom: 5.56%;
+}
+.header .container .header_bar .component1 a span {
+  position: absolute;
+  left: 46.97%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 36px;
+  color: #FFFFFF;
+}
+.header .container .header_bar .login a {
+  color: unset;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.header .container .header_bar .login a span {
+  position: absolute;
+  width: 91px;
+  height: 32px;
+  left: 1103px;
+  top: 15px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+.header .container .header_bar .register a {
+  color: unset;
+  text-decoration: none;
+}
+.header .container .header_bar .register a span {
+  position: absolute;
+  width: 90px;
+  height: 32px;
+  left: 1170px;
+  top: 15px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.menu {
+  position: relative;
+  width: 1280px;
+  height: 50px;
+  background: #FFFFFF;
+}
+.menu .container .menu_bar a {
+  color: unset;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  opacity: 0.7;
+  margin-right: 15px;
+  position: relative;
+}
+.menu .container .menu_bar a::after {
+  position: absolute;
+  content: "";
+  bottom: -3px;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  top: "";
+  background-color: #000000;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.menu .container .menu_bar a:hover {
+  font-weight: 400;
+  font-size: "";
+  line-height: "";
+  color: #000000;
+  opacity: 1;
+}
+.menu .container .menu_bar a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.carousel {
+  width: 1280px;
+}
+.carousel .container .carousel-inner {
+  margin-left: -15px;
+}
+.carousel .container .carousel-inner .carousel-item .carousel-item1 {
+  display: flex;
+  position: relative;
+}
+.carousel .container .carousel-inner .carousel-item .carousel-item1 .img-bg {
+  width: 1280px;
+  height: 393px;
+  left: -36px;
+  top: 107px;
+}
+.carousel .container .carousel-inner .carousel-item .carousel-item1 .img-item {
+  position: absolute;
+  width: 821px;
+  height: 392px;
+  left: 86px;
+  top: 5px;
+}
+.carousel .container .carousel-inner .carousel-item .carousel-item1 .product-info {
+  position: absolute;
+  margin-left: 70%;
+  margin-top: 5%;
+}
+.carousel .container .carousel-inner .carousel-item .carousel-item1 .product-info h3 {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 48px;
+  color: "";
+}
+.carousel .container .carousel-inner .carousel-item .carousel-item1 .product-info p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: "";
+}
+.carousel .container .carousel-inner .carousel-item .carousel-item1 .product-info .btn-buy {
+  background-color: #F8B653;
+  width: 150px;
+  height: 50px;
+  left: 930px;
+  top: 225px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  border: none;
+}
+
+.product-list {
+  width: 1280px;
+  margin-top: 50px;
+}
+.product-list .container .title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  color: "";
+}
+.product-list .container .row-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product-list .container .row-wrap .col-wrap {
+  padding: 46px;
+  width: 33.3333333333%;
+}
+.product-list .container .row-wrap .col-wrap .card img {
+  position: absolute;
+  width: 220px;
+  height: 156px;
+  left: 57px;
+  top: 45px;
+}
+.product-list .container .row-wrap .col-wrap .card .card-body {
+  background: #F8F8F8;
+  width: 334px;
+  height: 369px;
+}
+.product-list .container .row-wrap .col-wrap .card .card-body .product-name {
+  position: absolute;
+  width: 185px;
+  height: 29px;
+  left: 23px;
+  top: 231px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: "";
+}
+.product-list .container .row-wrap .col-wrap .card .card-body .product-desc {
+  position: absolute;
+  width: 153px;
+  height: 24px;
+  left: 23px;
+  top: 268px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #CBC9C9;
+}
+.product-list .container .row-wrap .col-wrap .card .card-body .buy-price-wrap {
+  align-items: center;
+}
+.product-list .container .row-wrap .col-wrap .card .card-body .buy-price-wrap .btn-buy {
+  position: absolute;
+  width: 175px;
+  height: 64px;
+  left: 0px;
+  top: 305px;
+  background-color: #F8B653;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  border: none;
+}
+.product-list .container .row-wrap .col-wrap .card .card-body .buy-price-wrap .product-price {
+  position: absolute;
+  width: 160px;
+  height: 64px;
+  left: 174px;
+  top: 305px;
+  background: #DEDDDC;
+  margin-bottom: 0px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 64px;
+  color: #000000;
+}
+
+.footer {
+  width: 1280px;
+}
+.footer .container .footer-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .container .footer-wrap .footer-col {
+  width: 33.3333333333%;
+}
+.footer .container .footer-wrap .footer-col .text {
+  width: 300px;
+  height: 150px;
+  padding-top: 25px;
+  margin-left: 50px;
+}
+.footer .container .footer-wrap .footer-col .text h3 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+.footer .container .footer-wrap .footer-col .text p {
+  font-size: 13px;
+}
+.footer .container .footer-wrap .footer-col .text a {
+  font-size: 13px;
+  text-decoration: none;
+  color: unset;
+}
+.footer .container .footer-wrap .footer-col .text .text-link {
+  color: red;
+}
+.footer .container .footer-wrap .footer-color {
+  background-color: #DEDDDC;
+}
