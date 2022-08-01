@@ -205,6 +205,9 @@
   padding: 46px;
   width: 33.3333333333%;
 }
+.product-list .container .row-wrap .col-wrap .card {
+  width: 334px;
+}
 .product-list .container .row-wrap .col-wrap .card img {
   position: absolute;
   width: 220px;
@@ -215,7 +218,7 @@
 .product-list .container .row-wrap .col-wrap .card .card-body {
   background: #F8F8F8;
   width: 334px;
-  height: 369px;
+  height: 451px;
 }
 .product-list .container .row-wrap .col-wrap .card .card-body .product-name {
   position: absolute;
@@ -230,12 +233,12 @@
 }
 .product-list .container .row-wrap .col-wrap .card .card-body .product-desc {
   position: absolute;
-  width: 153px;
-  height: 24px;
+  width: "";
+  height: "";
   left: 23px;
-  top: 268px;
+  top: 300px;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 24px;
   color: #CBC9C9;
 }
@@ -247,7 +250,7 @@
   width: 175px;
   height: 64px;
   left: 0px;
-  top: 305px;
+  top: 387px;
   background-color: #F8B653;
   font-weight: 200;
   font-size: 24px;
@@ -265,7 +268,7 @@
   width: 160px;
   height: 64px;
   left: 174px;
-  top: 305px;
+  top: 387px;
   background: #DEDDDC;
   margin-bottom: 0px;
   text-align: center;

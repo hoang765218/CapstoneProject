@@ -262,6 +262,8 @@ $text-c4: #CBC9C9;
                 width: calc(100%/3);
 
                 .card {
+                    width: 334px;
+
                     img {
 
                         position: absolute;
@@ -276,7 +278,7 @@ $text-c4: #CBC9C9;
 
                         background: $bg-c4;
                         width: 334px;
-                        height: 369px;
+                        height: 451px;
 
                         .product-name {
                             position: absolute;
@@ -287,8 +289,8 @@ $text-c4: #CBC9C9;
 
                         .product-desc {
                             position: absolute;
-                            @include scale(153px, 24px, 23px, 268px);
-                            @include text(300, 20px, 24px, $text-c4);
+                            @include scale("", "", 23px, 300px);
+                            @include text(300, 16px, 24px, $text-c4);
 
                         }
 
@@ -297,7 +299,7 @@ $text-c4: #CBC9C9;
 
                             .btn-buy {
                                 position: absolute;
-                                @include scale(175px, 64px, 0px, 305px);
+                                @include scale(175px, 64px, 0px, 387px);
 
                                 background-color: $bg-c3;
                                 @include text(200, 24px, 29px, $text-c2 );
@@ -312,7 +314,7 @@ $text-c4: #CBC9C9;
 
                             .product-price {
                                 position: absolute;
-                                @include scale(160px, 64px, 174px, 305px);
+                                @include scale(160px, 64px, 174px, 387px);
 
                                 background: $bg-c5;
                                 margin-bottom: 0px;

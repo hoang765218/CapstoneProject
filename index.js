@@ -1,18 +1,23 @@
 //CAll API INDEX PAGES
 import { Shoe } from "./models.js";
-window.onload = {}
-var promise = axios({
-    url: 'https://shop.cyberlearn.vn/api/Product',
-    method: 'GET',
-    responseType: JSON,
-});
-promise.then(function (result) {
-    renderProductList(result.data.content);
-});
-promise.catch(function (error) {
-    console.log(error)
-});
+window.onload = () => {
+    GetProduct()
 
+};
+
+const GetProduct = () => { // Lấy sản phẩm
+    var promise = axios({
+        url: 'https://shop.cyberlearn.vn/api/Product',
+        method: 'GET',
+        responseType: JSON,
+    });
+    promise.then(function (result) {
+        renderProductList(result.data.content);
+    });
+    promise.catch(function (error) {
+        console.log(error)
+    });
+}
 function renderProductList(arrShoe) {//Truyền vào một mảng các object shoe
     let html = '';
     for (let index = 0; index < arrShoe.length; index++) {
@@ -35,7 +40,6 @@ function renderProductList(arrShoe) {//Truyền vào một mảng các object sh
         html += div;
     }
     document.querySelector('#productList').innerHTML = html;
-
 }
 
 
