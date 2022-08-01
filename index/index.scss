@@ -12,36 +12,10 @@
 
 }
 
-//Khai báo biến
-//bg-color
-$bg-c1: #000000;
-$bg-c2: #FFFFFF;
-$bg-c3: #F8B653;
-$bg-c4: #F8F8F8;
-$bg-c5: #DEDDDC;
-$bg-c6: #e7662d;
-//text-color
-$text-c1: #FFFFFF;
-$text-c2: #000000;
-$text-c3: red;
-$text-c4: #CBC9C9;
+@import'../variable'; // Biến
 
-//Mixing
-//text-font;
-@mixin text($fw, $fz, $lh, $c) {
-    font-weight: $fw;
-    font-size: $fz;
-    line-height: $lh;
-    color: $c;
-}
 
-//kích thước; vị trí
-@mixin scale($width, $height, $left, $top) {
-    width: $width;
-    height: $height;
-    left: $left;
-    top: $top;
-}
+
 
 // Nesting bar
 

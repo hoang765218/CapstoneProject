@@ -1,5 +1,5 @@
 //CAll API INDEX PAGES
-import { Shoe } from "./models.js";
+import { Shoe } from "../models.js";
 window.onload = () => {
     GetProduct()
 

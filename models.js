@@ -13,3 +13,13 @@ export class Shoe {
     shortDescription = '';
     size = '';
 }
+export class SignUp {
+    email = '';
+    password = '';
+    name = '';
+    gender = '';
+    phone = '';
+
+
+
+}
