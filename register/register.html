@@ -56,22 +56,22 @@
                 <div class="register-row row">
                     <div class="register-col col-6">
                         <div class="form-group">
-                            <span>(*)</span>
+                            <span id="error_email"></span>
                             <input id="email" class="form-control " type="text" placeholder="email">
                         </div>
-                        <div class="form-group"><span>(*)</span>
+                        <div class="form-group"><span id="error_password"></span>
                             <input id="password" class="form-control" type="text" placeholder="password">
                         </div>
-                        <div class="form-group"><span>(*)</span>
+                        <div class="form-group"><span id="error_password-confirm"></span>
                             <input id="password-confirm" class="form-control" type="text"
                                 placeholder="password confirm">
                         </div>
                     </div>
                     <div class="register-col col-6">
-                        <div class="form-group"><span>(*)</span>
+                        <div class="form-group"><span id="error_name"></span>
                             <input id="name" class="form-control" type="text" placeholder="name">
                         </div>
-                        <div class="form-group"><span>(*)</span>
+                        <div class="form-group"><span id="error_phone"></span>
                             <input id="phone" class="form-control" type="text" placeholder="phone">
                         </div>
                         <form>
@@ -80,6 +80,7 @@
                             <label>Male</label>
                             <input type="radio" name="gender" value="false">
                             <label>Female</label>
+                            <span id="error_gender"></span>
                         </form>
                         <button class="button" id="btnSubmit">Submit</button>
                     </div>
@@ -157,7 +158,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
+    <!-- Validation -->
+    <script src="../validation.js"></script>
     <!-- AXIOS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
         integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="

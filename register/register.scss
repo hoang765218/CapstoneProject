@@ -152,49 +152,33 @@
     }
 }
 
-// outline: none;
-// border-style: none;
-// border: none;
-// background: transparent;
+
 .register {
     width: 1280px;
 
     .container {
         padding: 0% 8% 8% 8%;
 
-
         h3 {
             text-align: center;
-            font-weight: 400;
-            font-size: 40px;
-            line-height: 48px;
-            color: #000000;
+            @include text(400, 40px, 48px, $text-c2);
             margin-bottom: 5%;
         }
 
         .register-row {
             .register-col {
                 .form-group {
-                    font-weight: 400;
-                    font-size: 20px;
-                    line-height: 24px;
-
-                    color: #F50E0E;
-
-
+                    @include text(400, 20px, 24px, $text-c3);
 
                     input {
-                        font-weight: 400;
-                        font-size: 30px;
-                        line-height: 36px;
+                        @include text(400, 30px, 36px, $text-c2);
                         margin: 30px 0px;
-                        color: #000000;
                         outline: none;
                         border-style: none;
                         border: none;
                         border-radius: none;
                         background: transparent;
-                        border-bottom: 5px solid #AE18E2;
+                        border-bottom: 5px solid $bg-c7;
                         padding-bottom: 5px;
 
 
@@ -204,26 +188,23 @@
 
 
                 form {
-                    font-weight: 400;
-                    font-size: 30px;
-                    line-height: 36px;
+                    @include text(400, 30px, 36px, '');
                     margin: 30px 0px;
                     margin-top: 55px;
 
                     input {}
+
+                    #error_gender {
+                        @include text(400, 20px, 24px, $text-c3);
+                    }
                 }
 
                 button {
                     height: 50px;
                     width: 291px;
-                    background: #AE18E2;
+                    background: $bg-c7;
                     border: none;
-                    font-weight: 400;
-                    font-size: 30px;
-                    line-height: 36px;
-
-                    color: #FFFCFC;
-
+                    @include text(400, 30px, 36px, $text-c1);
 
                 }
             }
